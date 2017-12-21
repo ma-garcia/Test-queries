@@ -1,3 +1,10 @@
+#+ summary: Posible lookup service
+#+ endpoint: http://http://linkeddata.dia.fi.upm.es:8890/sparql
+#+ tags:
+#+   - CNIG
+#+ method: GET
+#+ pagination: 50
+
 SELECT DISTINCT ?s ?o WHERE {
 	?s <http://www.w3.org/2000/01/rdf-schema#label> ?o . 
 	?o bif:contains ?_etiqueta
